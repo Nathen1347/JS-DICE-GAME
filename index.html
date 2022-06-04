@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="name-container">
+          <h1>Welcome to Dice Game</h1>
+          <div>
+            <input placeholder="Enter Player 1 Name" id="input1" />
+            <button id="player-1-name" class="submit-btn">Submit</button>
+          </div>
+          <div>
+            <input placeholder="Enter Player 2 Name" id="input2" />
+            <button id="player-2-name" class="submit-btn">Submit</button>
+          </div>
+        </div>
+      </section>
+      <section class="game-area">
+        <h1 id="player-turn">Roll Dice to Start</h1>
+        <div class="dice-container">
+          <div class="score-container">
+            <h1 id="player1">Player 1</h1>
+            <h1>
+              Score:
+              <span id="player-1-score">0</span>
+            </h1>
+            <div class="dice active animation" id="player-1-dice">-</div>
+          </div>
+          <div class="score-container">
+            <h1 id="player2">Player 2</h1>
+            <h1>
+              Score:
+              <span id="player-2-score">0</span>
+            </h1>
+            <div class="dice" id="player-2-dice">-</div>
+          </div>
+        </div>
+        <div>
+        <button class="roll-btn" id="roll-dice">Roll Dice</button>
+        <button class="reset" id="reset-btn">Reset</button>
+    </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
